@@ -1,6 +1,5 @@
 import React from "react"
 import Chart from '../Home/chart'
-import Circle from '../Home/circle'
 
 const Home = () => { 
     return (
@@ -12,7 +11,6 @@ const Home = () => {
                     <h3>525.145.000 </h3>
                     <h5>đồng</h5>
                 </div>
-                <Circle />
             </div>
     )
 }
