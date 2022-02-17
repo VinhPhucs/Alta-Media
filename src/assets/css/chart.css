@@ -1,0 +1,10 @@
+.content h1 {
+    margin-left: 30px;
+}
+.chart{
+    position: absolute;
+    width: 1250px;
+    height: 327px;
+    left: 0px;
+    top: 60px;
+}

@@ -1,0 +1,77 @@
+.layout{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    background: #F9F6F4;
+    border-radius: 24px;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 1920px;
+    height: 50px;
+    left: 0px;
+    top: 4px;
+}
+.logo{
+    /* insight logo */
+    position: static;
+    width: 133px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 5px 0px;
+}
+.search{
+    position: absolute;
+    width: 337px;
+    height: 40px;
+    left: 305px;
+    top: 10px; 
+    float: left;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 16px;
+}
+.search-icon{
+    position: absolute;
+    width: 280px;
+    height: 30px;
+    left: 320px;
+    top: 5px;
+}
+.bell{
+    position: absolute;
+    top: 10px;
+    left: 1390px;
+}
+.mail{
+    position: absolute;
+    top: 25px;
+    left: 1335px;
+}
+.user{
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    left: 1450px;
+    top: 0px;
+    /* background: url(Frame-54.png);*/
+    border-radius: 30px; 
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
