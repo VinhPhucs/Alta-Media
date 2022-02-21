@@ -1,6 +1,6 @@
 import React from "react"
 import Chart from '../Home/chart'
-
+import Round from '../Home/round'
 const Home = () => { 
     return (
             <div className="content">
@@ -11,6 +11,7 @@ const Home = () => {
                     <h3>525.145.000 </h3>
                     <h5>đồng</h5>
                 </div>
+                <Round />
             </div>
     )
 }
