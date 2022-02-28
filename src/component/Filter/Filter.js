@@ -1,9 +1,10 @@
 import React from "react";
 import { Checkbox, Col, DatePicker, Radio, Row, Space } from "antd";
 import "../../assets/css/modal.css";
+import 'antd/dist/antd.css';
 
 const plainOptions = ['Tất cả', 'Cổng 1', 'Cổng 2', 'Cổng 3', 'Cổng 4', 'Cổng 5'];
-// const defaultCheckedList = ['Tất cả'];
+
 
 const FilterTicket = () => {
     const [value, setValue] = React.useState(1);
@@ -15,30 +16,6 @@ const FilterTicket = () => {
     return (
         <>
             <h2 className="header-modal" style={{marginBottom:10}}>Lọc vé</h2>
-            {/* <Space style={{ marginTop: 20 }}>
-                <div style={{ width: 297 }}>
-                    <Space direction="vertical">
-                        Từ ngày
-                        <DatePicker
-                            style={{ width: 120 }}
-                            picker="date"
-                            format="DD/MM/YYYY"
-                            defaultValue={moment()}
-                        />
-                    </Space>
-                </div>
-                <div>
-                    <Space direction="vertical">
-                        Đến ngày
-                        <DatePicker
-                            style={{ width: 120 }}
-                            picker="date"
-                            format="DD/MM/YYYY"
-                            defaultValue={moment()}
-                        />
-                    </Space>
-                </div>
-            </Space> */}
             <Row>
                 <Col span={12}>
                     <Space direction="vertical">
