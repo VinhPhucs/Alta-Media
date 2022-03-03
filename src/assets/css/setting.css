@@ -1,0 +1,40 @@
+.setting-btn{
+    position: relative;
+    width: 240px;
+    height: 85px;
+    left: 1000px;
+}
+.add-btn{
+    position: relative;
+    top: 0px;
+    left: 110px;
+}
+.update-btn{
+    position: relative;
+    top: 40px;
+    left: 0px;
+}
+.button{
+    border-radius: 5px;
+    color: #ff993c;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #ff993c;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;                       
+}
+.button-save{
+    border-radius: 5px;
+    color: #ff993c;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #ff993c;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;                       
+}

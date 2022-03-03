@@ -1,0 +1,26 @@
+.manage-btn{
+    position: relative;
+    width: 240px;
+    height: 85px;
+    left: 1000px;
+}
+.filter-btn{
+    position: relative;
+}
+.file-btn{
+    position: relative;
+    top: -40px;
+    left: 110px;
+}
+.button{
+    border-radius: 5px;
+    color: #ff993c;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #ff993c;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;                       
+}

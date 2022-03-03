@@ -1,7 +1,6 @@
 import React from "react";
 import { Checkbox, Col, DatePicker, Radio, Row, Space } from "antd";
 import "../../assets/css/modal.css";
-import 'antd/dist/antd.css';
 
 const plainOptions = ['Tất cả', 'Cổng 1', 'Cổng 2', 'Cổng 3', 'Cổng 4', 'Cổng 5'];
 
