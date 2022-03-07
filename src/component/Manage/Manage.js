@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Search from "../Search/search"
 import Icon from "@ant-design/icons"
 import filter from "../../assets/filter/filter.svg.svg"
-import Filter from "../Filter/filter"
+import Filter from "../Filter/Filter"
 import { Modal } from "antd"
 import '../../assets/css/manage.css'
 
