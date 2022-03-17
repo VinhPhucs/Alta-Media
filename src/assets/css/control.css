@@ -12,3 +12,12 @@
     left: 40px;
     top: 30px;
 }
+.ant-table-pagination.ant-pagination {
+    margin: 16px 0;
+    position: relative;
+    right: 580px;
+}
+.db-content{
+    position: relative;
+    top: -790px;
+}
