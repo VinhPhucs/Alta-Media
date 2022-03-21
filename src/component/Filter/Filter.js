@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import { Checkbox, Col, DatePicker, Radio, Row, Space } from "antd";
 import "../../assets/css/modal.css";
+import db from "../../database";
 
-const plainOptions = ['Tất cả', 'Cổng 1', 'Cổng 2', 'Cổng 3', 'Cổng 4', 'Cổng 5'];
+const defaultCheckedList = [];
+const checkboxOptions = [ 1, 2, 3, 4, 5 ];
 
-
+const plainOptions = [];
 const FilterTicket = () => {
     const [value, setValue] = React.useState(1);
+
 
     const onChange = e => {
         setValue(e.target.value);
     };
+
+    const handleReset = () => {
+        
+    }
 
     return (
         <>
@@ -75,7 +82,7 @@ const FilterTicket = () => {
                 </Space>
             </div>
             <div style={{ width: 130, marginTop: 20, display:"block", marginLeft:"auto", marginRight:"auto"}} >
-                <button type="button" className="button" style={{ width: "100%", display: "block", textAlign: "center", lineHeight:2 }}>
+                <button type="button" className="button" onClick={handleReset} style={{ width: "100%", display: "block", textAlign: "center", lineHeight:2 }}>
                     Lọc
                 </button>
             </div>
