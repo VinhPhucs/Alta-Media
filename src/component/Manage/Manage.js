@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from "react"
 import Search from "../Search/search"
 import Icon from "@ant-design/icons"
-import filter from "../../assets/filter/filter.svg.svg"
+import iconfilter from "../../assets/filter/filter.svg.svg"
 import Filter from "../Filter/Filter"
 import { Modal, Table, Tag } from "antd"
 import { collection, getDocs, query, orderBy } from "firebase/firestore"
@@ -11,6 +11,10 @@ import '../../assets/css/manage.css'
 const Home = () =>{
 
     const [table, setTable] = useState([]);
+    console.log(table);
+    const [value, setValue] = useState();
+    const [filter, setFilter] = useState([]);
+    console.log(filter);
 
     const fetchTable = async () => {
         const response = query(collection(db, 'listTicket'), orderBy('STT'));
@@ -23,6 +27,13 @@ const Home = () =>{
     useEffect(() => {
         fetchTable();
     }, [])
+
+    const handleFilter = () => {
+        setFilter(() => {
+          return table.filter((item) => item.check == value);
+        });
+        return setTable(filter);
+      };
 
     const [isModalVisible, setIsModalVisible] = useState(false);
 
@@ -100,7 +111,7 @@ const Home = () =>{
             <div className="manage-btn">
                 <div className="filter-btn">
                     <button type="button" className="button" onClick={showModal}>     
-                    <Icon style={{ paddingRight: 5 }} component={() => (<img src={filter} alt='' />)} />              
+                    <Icon style={{ paddingRight: 5 }} component={() => (<img src={iconfilter} alt='' />)} />              
                         Lọc vé
                     </button>
                 </div>
@@ -113,12 +124,15 @@ const Home = () =>{
             
 
             <Modal width={600} visible={isModalVisible} closable={false} footer={null} onCancel={handleCancel} style={{marginTop:-20}}>
-                <Filter />
+                <Filter 
+                value={(e) => setValue(e.target.value)}
+                handleFilter={handleFilter}
+                />
             </Modal>
             </div>
             <Table columns={columns} dataSource={table} />
         </div>
-    )
-}
+    );
+};
 
 export default React.memo(Home)
